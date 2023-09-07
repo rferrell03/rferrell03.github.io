@@ -42,9 +42,6 @@ changingTextElement.addEventListener("mousedown", function(){
 
 //====================================================================================
 
-const eyeGrabberText = document.getElementById("eyeGrabberText");
-const eyeGrabberLetters = eyeGrabberText.textContent.split("");
-console.log(eyeGrabberLetters);
 
 
 

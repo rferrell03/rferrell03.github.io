@@ -62,13 +62,25 @@ body{
 
 
 .eyeGrabber {
+    animation: panBackground 2s linear infinite; 
+    background: linear-gradient(to right, white, #ff0fef, #4487f3,#ff0fef, white);
+    background-size:200%;
     padding-left:3%;
     font-size: 30px;
     cursor: default;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.eyeGrabber{
-    animation: changeTextColor .75s infinite alternate;
+
+
+@keyframes panBackground{
+    from{
+        background-position: 0% center;
+    }
+    to{
+        background-position: -200% center;
+    }
 }
 
 @keyframes changeTextColor{
