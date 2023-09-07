@@ -1,10 +1,10 @@
 :root{
     --font: "Courier New", Courier, monospace;
-    --text: #f2f8fd;
-    --background: #010304;
-    --primary: #2280d8;
-    --secondary: #02080c;
-    --accent: #88bcec;
+    --text: #faf8fc;
+    --background: #140b1e;
+    --primary: #ac87d4;
+    --secondary: #261438;
+    --accent: #8a56c2;
 }
 
 
@@ -49,7 +49,8 @@
     padding:0;
     justify-content: center;
     align-items: center;
-    /*FIX THIS DAMN BUTTON */
+    /*FIX THIS DAMN BUTTON
+    perhaps not use a <button> */
 }
 
 
@@ -61,12 +62,12 @@ body{
 
 
 .eyeGrabber {
-    padding-left:10%;
+    padding-left:3%;
     font-size: 30px;
     cursor: default;
 }
 
-.eyeGrabber h1{
+.eyeGrabber{
     animation: changeTextColor .75s infinite alternate;
 }
 
@@ -134,7 +135,7 @@ body{
 
 .quickLinks li{
     margin-bottom: 20px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .about{
