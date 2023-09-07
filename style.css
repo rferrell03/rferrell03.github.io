@@ -1,0 +1,141 @@
+:root[data-theme = "dark"]{
+    --font: "Courier New", Courier, monospace;
+    --text: #d9f7f3;
+    --background: #03110f;
+    --primary: #95eee0;
+    --secondary: #0a3e35;
+    --accent: #28c8b0;
+}
+:root[data-theme = "light"]{ 
+    --text: #03110f;
+    --background: #d9f7f3;
+    --primary: #95eee0;
+    --secondary: #e5fbf7;
+    --accent: #0f4940;
+}
+
+.navbar{
+    border-bottom: 5px solid var(--accent);
+}
+
+.navbarList{
+    list-style-type: none;
+    background-color: var(--background);
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+}   
+
+
+.navbarList li{
+   color: var(--text);
+   font-family: var(--font);
+   font-size: 35px;
+   float:right;
+}
+
+.navbarList li a{
+    padding:40px;
+    cursor:pointer;
+    
+}
+
+.navbarList li a:hover{
+    transition-duration: .5s;
+    background-color: var(--secondary);
+}
+
+#themeButton{
+    width:30px;
+    height:30px;
+    border: none;
+    border-radius: 3px;
+    padding:0;
+    justify-content: center;
+    align-items: center;
+    /*FIX THIS DAMN BUTTON */
+}
+
+
+body{
+    background-color: var(--background);
+    color:var(--text);
+    font-family: var(--font);
+}
+
+
+.eyeGrabber {
+    padding-left:10%;
+    font-size: 30px;
+    cursor: default;
+}
+
+
+.home{
+    display: flex; 
+}
+
+.picture{
+    width: 15%;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+}
+
+.textBlock{
+    width:75%;
+    height: 250px;
+    background-color: var(--secondary);
+    border-radius: 10px;
+    margin-left:1%;
+    padding: 1%;
+    box-shadow: 10px 10px 20px var(--accent);
+
+}
+
+.textBlock h1{
+    margin-top: 0;
+    margin-left:10px;
+    text-decoration: underline;
+}
+
+.quickLinks{
+    width: 10%;
+    margin-left: 20px;
+    background-color: var(--secondary);
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.quickLinks p{
+    text-decoration: underline;
+    margin-top:0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.quickLinks ul{
+    list-style-type: none;
+}
+
+.quickLinks li{
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.about{
+    
+}
+
+.personal-projects{
+
+
+}
+
+
+.contact{
+    
+}
