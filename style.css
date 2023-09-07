@@ -1,17 +1,17 @@
 :root[data-theme = "dark"]{
     --font: "Courier New", Courier, monospace;
-    --text: #d9f7f3;
-    --background: #03110f;
-    --primary: #95eee0;
-    --secondary: #0a3e35;
-    --accent: #28c8b0;
+    --text: #f2f8fd;
+    --background: #010304;
+    --primary: #2280d8;
+    --secondary: #02080c;
+    --accent: #88bcec;
 }
 :root[data-theme = "light"]{ 
-    --text: #03110f;
-    --background: #d9f7f3;
-    --primary: #95eee0;
-    --secondary: #e5fbf7;
-    --accent: #0f4940;
+    --text: #010304;
+    --background: #f2f8fd;
+    --primary: #2280d8;
+    --secondary: #b3d7f3;
+    --accent: #1e71bd;
 }
 
 .navbar{
