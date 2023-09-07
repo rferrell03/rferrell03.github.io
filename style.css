@@ -1,4 +1,4 @@
-:root[data-theme = "dark"]{
+:root{
     --font: "Courier New", Courier, monospace;
     --text: #f2f8fd;
     --background: #010304;
@@ -6,13 +6,7 @@
     --secondary: #02080c;
     --accent: #88bcec;
 }
-:root[data-theme = "light"]{ 
-    --text: #010304;
-    --background: #f2f8fd;
-    --primary: #2280d8;
-    --secondary: #b3d7f3;
-    --accent: #1e71bd;
-}
+
 
 .navbar{
     border-bottom: 5px solid var(--accent);
@@ -70,6 +64,23 @@ body{
     padding-left:10%;
     font-size: 30px;
     cursor: default;
+}
+
+.eyeGrabber h1{
+    animation: changeTextColor .75s infinite alternate;
+}
+
+@keyframes changeTextColor{
+    0% { color: #BF0FFF; }
+    10% { color: #bf0fff; }
+    20% { color: #b118fb; }
+    30% { color: #ab1cf9; }
+    40% { color: #9b27f4; }
+    50% { color: #8635ee; }
+    60% { color: #7540e8; }
+    70% { color: #5853df; }
+    80% { color: #3769d5; }
+    90%, 100% { color: #306ED3; }
 }
 
 
@@ -132,9 +143,17 @@ body{
 
 .personal-projects{
 
+}
+
+.cardWrapper{
+    background-color: var(--primary);
+    border-radius: 10px;
 
 }
 
+.card{
+
+}
 
 .contact{
     

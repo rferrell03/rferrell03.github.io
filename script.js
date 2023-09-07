@@ -1,4 +1,4 @@
-const developerSynonyms = ["Programmer", "Coder", "Software Engineer", "Developer", "Code Artisan", "Script", "Game Dev", "App Developer" ];
+const developerSynonyms = ["Programmer", "Coder", "Software Engineer", "Developer", "Code Artisan", "Script", "Game Dev", "App Developer", "Web Developer", "Full-Stack Developer", "Front-End Developer", "Back-End Developer", "Mobile App Developer", "Software Developer", "Computer Scientist", "Algorithm Designer", "Tech Enthusiast", "Software Architect", "System Analyst", "UI/UX Designer", "DevOps Engineer", "Data Scientist", "Network Engineer", "Quality Assurance Engineer", "Machine Learning Engineer", "Data Engineer", "UI/UX Designer", "Data Analyst", "Technical Writer"];
 const characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_-+=[]{}|;:'\",.<>?`~ ";
 function getRandomFromArray(arr){
     var min = 0;
@@ -32,7 +32,7 @@ function randomLetterGenerator(length){
 const changingTextElement = document.getElementById("changingText");
 var nextWord = getRandomFromArray(developerSynonyms);
 
-changingTextElement.addEventListener("mouseover", function(){  
+changingTextElement.addEventListener("mousedown", function(){  
     var iterations = 0;  
     const interval = setInterval(() => {
         changingTextElement.textContent = randomLetterGenerator(nextWord.length); 
