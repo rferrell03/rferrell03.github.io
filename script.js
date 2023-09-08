@@ -42,6 +42,14 @@ changingTextElement.addEventListener("mousedown", function(){
 
 //====================================================================================
 
+const rootedInMathCard = document.getElementById("rootedInMath");
+const torchlightTango = document.getElementById("torchlightTango");
+rootedInMathCard.addEventListener("mousedown", () => {
+    window.open("https://parkerposey.itch.io/rooted-in-math");
+});
+torchlightTango.addEventListener("mousedown", () => {
+    window.open("https://parkerposey.itch.io/torchlight-tango");
+});
 
 
 
