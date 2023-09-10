@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href = "style.css">
-    
+    <script src="https://kit.fontawesome.com/c1d6c882c4.js" crossorigin="anonymous"></script>
     <title>Robert Ferrell</title>
 </head>
 <body>
     <nav class = "navbar">
         <ul class = "navbarList">
-            <li style = "float: left;">Robert Ferrell</li>
-            <!--<li><button id = "themeButton">Change theme</button></li>-->
+            <li style = "float: left; padding-top: 5px;">Robert Ferrell</li>
+            <li><a href="resumeFall2023.pdf" download><button>Check out my Resume!</button></a></li>
+            <li></li>
+            <!--<li><button id = "themeButton">Change theme</button></li>
             <li><a>Contact</a></li>
-            <li><a>Personal Projects</a></li>
+            <li><a>Personal Projects</a></li>-->
         </ul>
     </nav>
 
@@ -23,15 +25,38 @@
         </div>
         <div class="home">
             <div class="picture">GONNA PUT A NICE ASS PICTURE HERE</div>
-            <div class="textBlock"><h1>Big text area</h1></div>
+            <div class="textBlock"><h1>My Corner of the Web</h1><p>I use this space to show off some of my own personal projects. I believe that every project can be considered a learning experience, even if one isn't as complex as another. 
+                As I am still studing, I am branching out into a multitude of different ideas to try and get a footing on what I enjoy doing. Feel free to check each project out! </p></div>
             <div class="quickLinks">
                 <p class = "bigText">Socials</p>
-                <ul>
-                    <li><!--<img style = "width:50px; height: 50px;"src = "/socialIcons/icons8-discord-50.png"></li>
-                    <li><a href = "https://www.linkedin.com/in/rferrell03/" target = "_blank"><img style = "width:50px; height: 50px;"src = "/socialIcons/iconmonstr-linkedin-2-240.png"></a></li>
-                    <li>Twitter</li>
-                    <li>Discord</li> -->
+                <div class="column">
+                    <div class="icon"><i class="fa-brands fa-linkedin fa-lg"></i></div>
+                    <a href = "https://www.linkedin.com/in/rferrell03/"><div class="text">LinkedIn</div></a>
+                </div>
+                <div class="column">
+                    <div class="icon"><i class="fa-brands fa-github fa-lg"></i></div>
+                    <a href="https://github.com/rferrell03"><div class="text">Github</div></a>
+                </div>
+                <div class="column">
+                    <div class="icon"><i class="fa-brands fa-twitter fa-lg"></i></div>
+                    <a href="https://twitter.com/robertferrell03"><div class="text">Twitter</div></a>
+                </div>
+                <div class="column">
+                    <div class="icon"><i class="fa-brands fa-discord fa-lg"></i></div>
+                    <a href = "https://discord.com/users/200457731004563456"><div class="text">Discord</div></a>  
+                </div>
+                <!--<ul>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
                 </ul>
+                <ul>
+                    <li>LinkedIn</li>
+                    <li>GitHub</li>
+                    <li>Twitter</li>
+                    <li>Discord</li> 
+                </ul>-->
             </div>
         </div>
 
@@ -39,20 +64,22 @@
             <h1>Personal Projects</h1>
             <div class="cardWrapper">
                 <div class="card" id = "rootedInMath"><img src = "PersonalProjectPictures/6MsNtb.png"><span>Rooted in Math</span><p>A challenging equation builder game <br>Created entirely in Unity</p></div>
-                <div class="card" id = "torchlightTango"><img src = "PersonalProjectPictures/Capture.PNG"><span>Torchlight Tango</span><p>A Co-op puzzle game constructed using Unity netcode & Unity Relay</p></div>
-                <div class="card"><img style = "height:270px;"src = "PersonalProjectPictures/myTips.PNG"><span>MyTips --WIP--</span><p>Used to help tipped workers keep track of cash & show trends in earning</p></div>
+                <div class="card" id = "torchlightTango"><img src = "PersonalProjectPictures/Capture.PNG"><span>Torchlight Tango</span><p>Co-op puzzle game created in Unity. Unity netcode & Unity Relay used for multiplayer</p></div>
+                <div class="card"><img style = "height:270px;"src = "PersonalProjectPictures/myTips.PNG"><span>MyTips --WIP--</span><p>A React app for tipped workers to track cash earnings and earnings trends.</p></div>
             </div>
         </div>
-
+        <!--
         <div class="contact">
             <h1>Contact Area</h1>
-            <div class="contactBoxes">
-                <textarea placeholder="Name"></textarea>
-                <textarea placeholder="Email"></textarea>
-                <textarea placeholder="Phone Number(optional)"></textarea>
-                <textarea placeholder="Any details!"></textarea>
-            </div>
-        </div>
+            <form id="form" class="topBefore">
+		
+                <input id="name" type="text" placeholder="NAME">
+                <input id="email" type="text" placeholder="E-MAIL">
+                <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+                <input id="submit" type="submit" value="Submit">
+            </form>
+        </div>-->
+        <footer>Made with <3 by Robert Ferrell || Contact: referrelliii@gmail.com</footer>
     </div>
     <script src = "script.js"></script>
 </body>
