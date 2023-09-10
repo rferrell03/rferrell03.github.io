@@ -163,17 +163,17 @@ body{
 
 .column {
     display: flex;
-    align-items: center; /* Vertically center the content */
-    margin-bottom: 20px; /* Add spacing between columns if needed */
+    align-items: center; 
+    margin-bottom: 20px; 
   }
   
 .icon {
-    margin-right: 10px; /* Add space between icon and text */
+    margin-right: 10px;
 }
 
 .text {
     font-size: 25px;
-    flex: 1; /* Allow the text to grow and fill the available space */
+    flex: 1; 
 }
 
 .column a{
@@ -186,13 +186,7 @@ body{
     color:var(--accent);
 }
 
-.about{
-    
-}
 
-.personal-projects{
-
-}
 
 .cardWrapper{
     background-color: var(--secondary);
