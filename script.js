@@ -26,8 +26,11 @@ function randomLetterGenerator(length){
 //================= Used for changing the text on the eyegrabber======================
 const changingTextElement = document.getElementById("changingText");
 var nextWord = getRandomFromArray(developerSynonyms);
+var textChanging=false;
 changingTextElement.addEventListener("mousedown", function(){  
-    var iterations = 0;  
+    var iterations = 0;
+    if(!textChanging){
+    textChanging=true;  
     const interval = setInterval(() => {
         changingTextElement.textContent = randomLetterGenerator(nextWord.length); 
         iterations++; 
@@ -37,7 +40,8 @@ changingTextElement.addEventListener("mousedown", function(){
             iterations =0;
             clearInterval(interval)
         }
-    }, 40);
+    }, 40);}
+    textChanging=false;
 });
 
 //====================================================================================
