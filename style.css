@@ -110,8 +110,14 @@ body{
 .picture{
     width: 15%;
     border-radius: 10px;
-    background-color: white;
     color: black;
+   
+
+}
+.picture img{
+    width: 100%;
+    box-shadow: -1px 39px 78px -21px var(--accent);
+    border-radius: 30px;
 }
 
 .textBlock{
