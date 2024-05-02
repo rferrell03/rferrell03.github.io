@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+:root{
+  --font:  "Roboto mono", monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  overflow: hidden; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mainContainer{
   display: flex;
+  flex-direction: row;
+  padding: 25px;
+  padding-top: 5px;
+  
+}
+
+.boxLeft{
+  background-color: white;
+  font-family: var(--font);
+  font-size: 20px;
+  height: 95vh;
+  flex: 1;
+  margin-right: 15px;
+  border: 3px solid black;
+
+  legend{
+    border: 3px solid black;
+    background-color: white;
+  }
+}
+.boxRight{
+  font-family: var(--font);
+  font-size: 20px;
+  flex: 3;
+  border: 3px solid black;
+  legend{
+    border: 3px solid black;
+    background-color: white;
+  }
+}
+
+.projects{
+  font-family: var(--font);
+  font-size: 20px;
+  display:flex;
+  height: 98%;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  list-style: none;
+  padding-left: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.projectButton{
+  padding-right: 15px;
+  margin-bottom: 15px;
+  padding-left: 5px;
+  background-color: white;
+  border: 3px solid black;
+  transition-duration: 300ms;
+  cursor:pointer;
+  
+  span{
+    font-weight: bold;
+    float: right;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.profile{
+  border: 3px solid black;
+  height: 15vh;
+  margin-top: auto;
+  display:flex;
+  flex-direction: row;
+}
+
+.profImage{
+  margin: 5px;
+  border: 3px solid black;
+
+}
+
+.profName{
+
+}
+
+
+.socials{
+  margin-top: 10px;
+  height: 7vh;
+  border: 3px solid black
+}
+.projectButton:hover{
+  transition-duration: 300ms;
+  -webkit-box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+  box-shadow: 5px 5px 0px 0px rgba(0,0,0,1);
+}
+
+
+.blue:hover{
+  background-color: #D6F6FF;
+}
+.yellow:hover{
+  background-color: #F9FFB5;
+}
+.green:hover{
+  background-color: #B3F5BC;
+}
+.brown:hover{
+  background-color: #EADDCA;
+}
+.red:hover{
+  background-color: #FF6961;
 }
