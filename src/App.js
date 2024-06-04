@@ -42,7 +42,7 @@ function App() {
         <legend>Projects</legend>
         <ul className = "projects">
           <li className = "projectButton white"  onClick = {() =>{setCurrentScreen(3);}}>Home<span>{'>'}</span></li>
-          <li className = "projectButton brown"  onClick = {() =>{setCurrentScreen(0);}}>Bark.<span>{'>'}</span></li>
+          <li className = "projectButton brown"  onClick = {() =>{setCurrentScreen(0);}}>Bark<span>{'>'}</span></li>
           <li className = "projectButton yellow" onClick = {() =>{setCurrentScreen(1);}}>Torchlight Tango<span>{'>'}</span></li>
           <li className = "projectButton green"  onClick = {() =>{setCurrentScreen(2);}}>Rooted In Math<span>{'>'}</span></li>
           <li className=  "projectButton red"    onClick = {() =>{setCurrentScreen(4);}}>Refuge<span>{'>'}</span></li>

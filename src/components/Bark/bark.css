@@ -1,0 +1,74 @@
+.barkContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    padding-right:0px;
+    color:#806133;
+}
+
+.details{
+    color: #806133;
+}
+
+.title{
+    font-size: 65px;
+    margin:0px;
+
+}
+.imageContainer{
+    display:flex;
+    flex-direction: row;
+}
+
+.barkImg {
+    width: 300px;
+    height: 300px;
+}
+
+
+.projectDescriptionContainer{
+    display:flex;
+    flex-direction: row;
+    
+
+}
+
+.projectDescription{
+    flex:4;
+    h2{
+        margin:0px;
+    };
+    p{
+        margin-top: 3px;  
+        max-width: 55vw;
+    }
+}
+
+
+.techUsed{
+    flex:1;
+    border: 3px solid black;
+    padding-right: 15px;
+}
+
+.whatWasLearned{
+
+
+    
+}
+
+.try{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    h2 a{
+        border: 3px solid black;
+        padding: 15px;
+        padding-top:5px;
+        color:#806133;
+        background-color: #EADDCA;
+        text-decoration: none   ;
+    }
+}
