@@ -33,6 +33,7 @@ body{
   font-family: var(--font);
   font-size: 20px;
   flex: 3;
+  max-height: 905px;
   border: 3px solid black;
   legend{
     border: 3px solid black;

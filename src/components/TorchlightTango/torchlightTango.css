@@ -1,0 +1,67 @@
+.torchImg{
+    width:500px;
+    height:285px;
+    padding-right: 10px;
+}
+
+.torchContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    padding-right: 0px;
+    border-right: 3px black solid;
+    width: 550px;
+    padding-bottom: 15px;
+    border-bottom: 3px black solid;
+    h1{
+        align-self: center;
+    }
+}
+
+.headerWrapper{
+    display:flex;
+}
+
+.learningHeaderWrapper {
+    display: flex;
+    flex-direction:column;
+    font-size: 20px;
+
+    h2{
+        margin-bottom: 0px;
+        margin-top: 3px;
+        padding-bottom:0px;
+    }
+
+    p{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+    .learnedExperience{
+        height:142px;
+        padding-left: 10px;
+        border-bottom: 3px black solid;
+
+    }
+
+    .skillsLearned{
+        padding-left: 10px;
+        border-bottom: 3px black solid;
+    }
+}
+
+.torchTry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+
+    h2 a {
+        border: 3px solid black;
+        padding: 15px;
+        padding-top: 5px;
+        color: #2c2c0f;
+        background-color: #f4ff80;
+        text-decoration: none;
+    }
+}

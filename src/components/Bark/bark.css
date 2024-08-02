@@ -26,6 +26,9 @@
     height: 300px;
 }
 
+.techTitle{
+    padding-left: 10px;
+}
 
 .projectDescriptionContainer{
     display:flex;
@@ -50,15 +53,18 @@
     flex:1;
     border: 3px solid black;
     padding-right: 15px;
+    h2 {
+        margin: 0px;
+        margin-top:5px;
+    }
 }
 
 .whatWasLearned{
 
-
     
 }
 
-.try{
+.barkTry{
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -12,10 +12,11 @@ export default function Bark() {
         <div className = "details">
             <div className="projectDescriptionContainer">
                 <div className="projectDescription">
-                    <h2>About</h2>
+                    <h2>About</h2> 
                     <p>Bark is an app that addresses a mostly forgotten part about dog care; social interaction! With Bark, you can connect to other pet owners with ease. Then, hit up the local park and have fun playing with your pet and your new friend!</p>
                 </div>
                 <div className="techUsed">
+                    <h2 className = "techTitle">Tech used</h2>
                     <ul>
                         <li>React Native</li>
                         <li>Firebase</li>
@@ -25,7 +26,7 @@ export default function Bark() {
             </div>
 
             <div className="whatWasLearned">
-                <h2>What I took away</h2>
+                <h2>Skills learned</h2>
                 <ul>
                     <li>React Native</li>
                     <li>Firebase</li>
@@ -34,7 +35,7 @@ export default function Bark() {
                 </ul>
             </div>
 
-            <div className="try">
+            <div className="barkTry">
                 <h2><a href = "https://github.com/CSC-3380-Spring-2024/bark" className = "projectButton" target="_blank">Try it out!</a></h2>
             </div>
         </div>
