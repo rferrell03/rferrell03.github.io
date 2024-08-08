@@ -22,11 +22,14 @@
     display:flex;
 }
 
+.line{
+    border-bottom: 3px black solid
+}
 .learningHeaderWrapper {
     display: flex;
     flex-direction:column;
     font-size: 20px;
-
+    justify-content: space-between;
     h2{
         margin-bottom: 0px;
         margin-top: 3px;
@@ -40,13 +43,15 @@
     .learnedExperience{
         height:142px;
         padding-left: 10px;
-        border-bottom: 3px black solid;
+        flex-grow: 1;
 
     }
 
     .skillsLearned{
+        margin-top:0px;
         padding-left: 10px;
         border-bottom: 3px black solid;
+        flex-grow: 1;
     }
 }
 

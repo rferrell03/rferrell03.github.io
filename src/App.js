@@ -1,10 +1,12 @@
-import TorchlightTango from './components/TorchlightTango/torchlightTango';
 import './App.css';
 import {useState} from 'react'
 import RootedInMath from './components/Rooted In Math/RootedInMath';
 import Refuge from './components/Refuge/Refuge';
 import MealMaster from './components/Meal Master/MealMaster';
 import Bark from './components/Bark/Bark'
+import GamePage from './components/TorchlightTango/GamePage'
+
+import { gamesInfo } from './games';
 
 function App() {
   const [currentScreen, setCurrentScreen] = useState(0);
@@ -14,10 +16,10 @@ function App() {
   function renderScreen(){
     switch(currentScreen){
       case 0: changeColor(); return <Bark />;
-      case 1: changeColor(); return <TorchlightTango />;
+      case 1: changeColor(); return <GamePage {...gamesInfo.torchlightTangoInfo} />;
       case 2: changeColor(); return <RootedInMath />;
       case 3: changeColor(); return <div>Home</div>;
-      case 4: changeColor(); return <Refuge/>;
+      case 4: changeColor(); return <GamePage {...gamesInfo.refugeInfo} />;
       case 5: changeColor(); return <MealMaster />;
       default: return <div>Home</div>;
     }
