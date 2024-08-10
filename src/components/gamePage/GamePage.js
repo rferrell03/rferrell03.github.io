@@ -1,14 +1,21 @@
 import React from "react";
 import './gamePage.css'
 
-export default function GamePage({challenges, skills, about, gameplay, image, link}){
+
+import torchImg from "./torchlightTangoImage.png"
+import refugeImg from "./refugeimg.png"
+import rootedInMathImg from "./rootedInMathImg.png"
+
+export default function GamePage({ challenges, skills, about, gameplay, image, link, color }) {
+
+    let images = {torch: torchImg, refuge: refugeImg, rooted: rootedInMathImg}
     return(
         <>
             <div className = "headerWrapper">
                 <div className="torchContainer">
-                    <img src={image} className="torchImg" />
-                    <div className="torchTry">
-                        <h2><a href = {link} className = "projectButton" target="_blank">Try it out!</a></h2>
+                    <img src={images[image]} className="torchImg" />
+                    <div className="try">
+                        <h2><a href={link} className="projectButton" target="_blank" style={{ backgroundColor: color }}>Try it out!</a></h2>
                     </div>
                 </div>
                 <div className="learningHeaderWrapper">

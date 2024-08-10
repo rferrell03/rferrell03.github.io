@@ -1,4 +1,4 @@
-.torchImg{
+.image{
     width:500px;
     height:285px;
     padding-right: 10px;
@@ -55,7 +55,7 @@
     }
 }
 
-.torchTry {
+.try {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,9 +64,8 @@
     h2 a {
         border: 3px solid black;
         padding: 15px;
+        color: black;
         padding-top: 5px;
-        color: #2c2c0f;
-        background-color: #f4ff80;
         text-decoration: none;
     }
 }

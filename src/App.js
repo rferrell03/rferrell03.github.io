@@ -1,10 +1,8 @@
 import './App.css';
 import {useState} from 'react'
-import RootedInMath from './components/Rooted In Math/RootedInMath';
-import Refuge from './components/Refuge/Refuge';
 import MealMaster from './components/Meal Master/MealMaster';
 import Bark from './components/Bark/Bark'
-import GamePage from './components/TorchlightTango/GamePage'
+import GamePage from './components/gamePage/GamePage'
 
 import { gamesInfo } from './games';
 
@@ -17,7 +15,7 @@ function App() {
     switch(currentScreen){
       case 0: changeColor(); return <Bark />;
       case 1: changeColor(); return <GamePage {...gamesInfo.torchlightTangoInfo} />;
-      case 2: changeColor(); return <RootedInMath />;
+      case 2: changeColor(); return <GamePage {...gamesInfo.rootedInMathInfo} />;
       case 3: changeColor(); return <div>Home</div>;
       case 4: changeColor(); return <GamePage {...gamesInfo.refugeInfo} />;
       case 5: changeColor(); return <MealMaster />;
@@ -28,7 +26,7 @@ function App() {
   function changeColor(){
     switch(currentScreen){
       case 0: root.style.backgroundColor = `#EADDCA`; break; //bark
-      case 1: root.style.backgroundColor = "#F9FFB5"; break; //Torchlight tango
+      case 1: root.style.backgroundColor = "#BE90D4"; break; //Torchlight tango
       case 2: root.style.backgroundColor = "#B3F5BC"; break; //Rooted in math
       case 3: root.style.backgroundColor = "#FFFFFF"; break; //Home
       case 4: root.style.backgroundColor = "#FF6961"; break; //Refuge
