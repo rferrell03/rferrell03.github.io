@@ -1,10 +1,10 @@
 import './App.css';
 import {useState} from 'react'
-import MealMaster from './components/Meal Master/MealMaster';
-import Bark from './components/Bark/Bark'
+import ProjectPage from './components/Meal Master/ProjectPage';
 import GamePage from './components/gamePage/GamePage'
 
 import { gamesInfo } from './games';
+import { projectInfo } from './projects';
 
 function App() {
   const [currentScreen, setCurrentScreen] = useState(0);
@@ -13,12 +13,12 @@ function App() {
 
   function renderScreen(){
     switch(currentScreen){
-      case 3: changeColor(); return <Bark />;
+      case 3: changeColor(); return <ProjectPage {...projectInfo.barkInfo}/>;
       case 1: changeColor(); return <GamePage {...gamesInfo.torchlightTangoInfo} />;
       case 2: changeColor(); return <GamePage {...gamesInfo.rootedInMathInfo} />;
       case 0: changeColor(); return <div>Home</div>;
       case 4: changeColor(); return <GamePage {...gamesInfo.refugeInfo} />;
-      case 5: changeColor(); return <MealMaster />;
+      case 5: changeColor(); return <ProjectPage {...projectInfo.mealMasterInfo}/>;
       default: return <div>Home</div>;
     }
   }

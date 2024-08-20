@@ -1,36 +1,33 @@
 import React from "react";
 import './projectPage.css';
 
-export default function MealMaster() {
+import barkImg from "./barkLogo.png"
+
+export default function ProjectPage({features, tech, about, challenges, color, link, image, name}) {
+
+    let images = {bark: barkImg, meal: barkImg}
     return (
         <>
             <div className = "projectHeader">
                 <div className="projectContainer">
-                    <img src=""/*images[image]*/ className="projectImage" />
+                    <img src={images[image]} className="projectImage" />
                     <div className="try">
-                        <h2><a href=""/*{link}*/ className="projectButton" target="_blank" style={{ backgroundColor: "white"}}>Try it out!</a></h2>
+                        <h2><a href={link} className="projectButton" target="_blank" style={{ backgroundColor: color}}>Try it out!</a></h2>
                     </div>
                 </div>
                 <div className="projectInfo">
-                    <h1>Meal Master</h1>
+                    <h1>{name}</h1>
                     <div className = "headerColumns">
                         <div className="features">
                             <h3>Features:</h3>
                             <ul>
-                                <li>Recipe Searching</li>
-                                <li>Recipe Book</li>
-                                <li>Calorie Tracking</li>
-                                <li>Meal Planning</li>
-                                <li>Social Features</li>
+                                {features.map((str) => { return <li>{str}</li>})}
                             </ul>
                         </div>
                         <div className="techUsed">
                             <h3>Tech used:</h3>
                             <ul>
-                                <li>Firebase</li>
-                                <li>HTML / CSS / JS</li>
-                                <li>Git</li>
-                                <li>External recipe API</li>
+                                {tech.map((str) => { return <li>{str}</li>})}
                             </ul>
                         </div>
                     </div>
@@ -38,9 +35,9 @@ export default function MealMaster() {
             </div>
             <div className="aboutTorch">
                 <h2>About:</h2>
-                <p>about here</p>
+                <p>{about}</p>
                 <h2>Challenges:</h2>
-                <p>challenges here</p>
+                <p>{challenges}</p>
             </div>
         </>
     )

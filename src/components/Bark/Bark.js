@@ -1,12 +1,10 @@
 import React from "react";
 import './bark.css';
-import logo from "./barkLogo.png"
 export default function Bark() {
     return (
         <>
         <div className="barkContainer"> 
             <h1 className="title">Bark</h1>    
-            <img src={logo} className="barkImg" />
         </div>
 
         <div className = "details">
