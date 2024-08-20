@@ -4,11 +4,17 @@
     justify-content: right;
 }
 
+.projectImage {
+    width: 500px;
+    height: 285px;
+    padding: 3vh;
+    padding-top:0;
+
+}
 .projectContainer{
     display: flex;
     flex-direction: column;
     padding: 5px;
-    padding-left: 0px;
     padding-bottom: 15px;
     border-bottom: 3px black solid;
     border-left: 3px black solid;
@@ -18,7 +24,37 @@
     }
 }
 
-.DECIDEHERE{
+.projectInfo{
     flex-grow:1;
     
+    h1{
+        text-decoration: underline;
+    }
+}
+
+
+.headerColumns{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    font-size: 25px;
+    div{
+        flex-grow: 1;
+    }
+
+    .techUsed{
+        border-bottom: 3px solid black;
+        padding-left: 1vw;
+        h3 {
+            margin: 0px;
+        }
+    }
+
+    .features{
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
+        h3{
+            margin: 0px;
+        }
+    }
 }
