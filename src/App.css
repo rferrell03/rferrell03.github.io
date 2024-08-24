@@ -29,6 +29,7 @@ body{
     background-color: white;
   }
 }
+
 .boxRight{
   font-family: var(--font);
   font-size: 20px;
@@ -44,7 +45,7 @@ body{
 
 .projects{
   font-family: var(--font);
-  font-size: 20px;
+  font-size: 2.2vh;
   display:flex;
   height: 98%;
   flex-direction: column;
@@ -68,21 +69,17 @@ body{
 }
 
 .profile{
-  border: 3px solid black;
   height: 15vh;
   margin-top: auto;
   display:flex;
   flex-direction: row;
+    border: 3px solid black;
 }
 
 .profImage{
   margin: 5px;
   border: 3px solid black;
-
-}
-
-.profName{
-
+  overflow: hidden;
 }
 
 
@@ -115,3 +112,44 @@ body{
   background-color: #FF6961;
 }
 
+#facePic{
+  width: 140px;
+  height: 150px;
+}
+#icon{
+  width: 4vw;
+  height: 7.5vh;
+}
+
+.socialsArea{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.socialBox{
+  border: 3px solid black;
+  padding: 10px;
+  margin-top:5px;
+  transition-duration: 300ms;
+}
+
+.socialBox:hover{
+  background-color: rgba(0, 0, 0, 0.123);
+  transition-duration: 300ms;
+  -webkit-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
+  box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
+}
+
+a{
+  text-decoration: none;
+  color:inherit;
+}
+
+
+@media (max-height: 800px) {
+  .boxRight {
+    overflow-y: scroll;
+  }
+}

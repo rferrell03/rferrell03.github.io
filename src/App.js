@@ -1,10 +1,13 @@
 import './App.css';
 import {useState} from 'react'
-import ProjectPage from './components/Meal Master/ProjectPage';
+import ProjectPage from './components/projectPage/ProjectPage';
 import GamePage from './components/gamePage/GamePage'
-
+import Home from './components/homePage/Home'
 import { gamesInfo } from './games';
 import { projectInfo } from './projects';
+import facePic from './SmilingClosedHeadshotTransparent.png'
+
+import resume from "./resumeFall2023FINALFINAL.pdf"
 
 function App() {
   const [currentScreen, setCurrentScreen] = useState(0);
@@ -16,7 +19,7 @@ function App() {
       case 3: changeColor(); return <ProjectPage {...projectInfo.barkInfo}/>;
       case 1: changeColor(); return <GamePage {...gamesInfo.torchlightTangoInfo} />;
       case 2: changeColor(); return <GamePage {...gamesInfo.rootedInMathInfo} />;
-      case 0: changeColor(); return <div>Home</div>;
+      case 0: changeColor(); return <Home />;
       case 4: changeColor(); return <GamePage {...gamesInfo.refugeInfo} />;
       case 5: changeColor(); return <ProjectPage {...projectInfo.mealMasterInfo}/>;
       default: return <div>Home</div>;
@@ -49,8 +52,15 @@ function App() {
           <li className = "projectButton yellow" onClick = {() =>{setCurrentScreen(1);}}>Torchlight Tango<span>{'>'}</span></li>
 
 
-          <li className = "profile"><div className = "profImage">imgPlaceholder</div><div className = "profName">Text here</div></li>
-          <li className = "socials">socials will go here</li>
+          <li className="profile">
+            <div className="profImage"><img src={facePic} id="facePic"></img></div>
+
+            <div className = "socialsArea">
+              <a href={resume} download="resumeFall2023FINALFINAL.pdf"><div className = "socialBox">Check out my resume!</div></a>
+              <a href = "https://linktr.ee/robbbieee" target='_blank'><div className = "socialBox">Socials</div></a>
+            </div>
+
+          </li>
         </ul>
       </fieldset>
       <fieldset className = {`boxRight`}>
