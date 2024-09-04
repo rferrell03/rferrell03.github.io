@@ -56,7 +56,7 @@ function App() {
             <div className="profImage"><img src={facePic} id="facePic"></img></div>
 
             <div className = "socialsArea">
-              <a href={resume} download="resumeFall2023FINALFINAL.pdf"><div className = "socialBox">Check out my resume!</div></a>
+              <a href={resume} download="ferrell2025.pdf"><div className = "socialBox">Check out my resume!</div></a>
               <a href = "https://linktr.ee/robbbieee" target='_blank'><div className = "socialBox">Socials</div></a>
             </div>
 
