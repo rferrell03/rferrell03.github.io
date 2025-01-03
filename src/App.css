@@ -111,6 +111,10 @@ body{
 .red:hover{
   background-color: #FF6961;
 }
+.pink:hover{
+  background-color: #FFD3EE;
+
+}
 
 #facePic{
   width: 140px;

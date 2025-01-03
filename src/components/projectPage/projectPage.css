@@ -45,6 +45,7 @@
 
     .techUsed{
         border-bottom: 3px solid black;
+        min-width: 15vw;
         padding-left: 1vw;
         h3 {
             margin: 0px;
