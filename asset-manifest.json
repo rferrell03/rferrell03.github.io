@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.d2cbc51f.css",
-    "main.js": "/static/js/main.f23109f1.js",
+    "main.css": "/static/css/main.7620af1b.css",
+    "main.js": "/static/js/main.1d9ffeb1.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/SmilingClosedHeadshotTransparent.png": "/static/media/SmilingClosedHeadshotTransparent.b92855574a4cc05897a9.png",
     "static/media/refugeimg.png": "/static/media/refugeimg.4ce4d4ed55a1f0a3e53f.png",
     "static/media/mealMasterPic.PNG": "/static/media/mealMasterPic.cdb09033c1495cca7cf2.PNG",
-    "static/media/resumeFall2023FINALFINAL.pdf": "/static/media/resumeFall2023FINALFINAL.5f43bdf3203977b2e545.pdf",
+    "static/media/catchLogo.png": "/static/media/catchLogo.664de70feaa92e46db1a.png",
+    "static/media/ferrellResume2025.pdf": "/static/media/ferrellResume2025.a2979c958737d3666c4b.pdf",
     "static/media/torchlightTangoImage.png": "/static/media/torchlightTangoImage.529bacc5560e74d3f74b.png",
     "static/media/barkLogo.png": "/static/media/barkLogo.0b88e4d03f4660704af7.png",
     "static/media/rootedInMathImg.png": "/static/media/rootedInMathImg.b2a84855f053d5747515.png",
     "index.html": "/index.html",
-    "main.d2cbc51f.css.map": "/static/css/main.d2cbc51f.css.map",
-    "main.f23109f1.js.map": "/static/js/main.f23109f1.js.map",
+    "main.7620af1b.css.map": "/static/css/main.7620af1b.css.map",
+    "main.1d9ffeb1.js.map": "/static/js/main.1d9ffeb1.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d2cbc51f.css",
-    "static/js/main.f23109f1.js"
+    "static/css/main.7620af1b.css",
+    "static/js/main.1d9ffeb1.js"
   ]
 }
