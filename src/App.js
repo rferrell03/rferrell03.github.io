@@ -1,73 +1,88 @@
 import './App.css';
-import {useState} from 'react'
+import { useCallback, useState, useEffect } from 'react';
 import ProjectPage from './components/projectPage/ProjectPage';
 import GamePage from './components/gamePage/GamePage'
 import Home from './components/homePage/Home'
 import { gamesInfo } from './games';
 import { projectInfo } from './projects';
-import facePic from './SmilingClosedHeadshotTransparent.png'
 
 import resume from "./ferrellResume2025.pdf"
 
+
+
+//Screen consts
+const SCREEN = [
+  { screenName:"HOME", colorName: "white"},
+  { screenName:"THE CATCH", colorName: "pink"},
+  { screenName:"BARK", colorName: "brown"},
+  { screenName:"TORCHLIGHT TANGO", colorName: "purple"},
+  { screenName:"ROOTED IN MATH", colorName: "green"},
+  { screenName:"REFUGE", colorName: "red"},
+]
+
+const SCREENS = {
+  HOME: 0,
+  THE_CATCH: 1,
+  BARK: 2,
+  TORCHLIGHT_TANGO: 3,
+  ROOTED_IN_MATH: 4,
+  REFUGE: 5,
+}
+const SCREEN_COLORS = {
+  [SCREENS.HOME]: "#FFFFFF",
+  [SCREENS.THE_CATCH]: "#FFD3EE",
+  [SCREENS.BARK]: "#EADDCA",
+  [SCREENS.TORCHLIGHT_TANGO]: "#BE90D4",
+  [SCREENS.ROOTED_IN_MATH]: "#B3F5BC",
+  [SCREENS.REFUGE]: "#FF6961",
+}
+
+const SCREEN_COMPONENTS = {
+  [SCREENS.HOME]: <Home />,
+  [SCREENS.THE_CATCH]: <ProjectPage {...projectInfo.theCatchInfo} />,
+  [SCREENS.BARK]: <ProjectPage {...projectInfo.barkInfo} />,
+  [SCREENS.TORCHLIGHT_TANGO]: <GamePage {...gamesInfo.torchlightTangoInfo} />,
+  [SCREENS.ROOTED_IN_MATH]: <GamePage {...gamesInfo.rootedInMathInfo} />,
+  [SCREENS.REFUGE]: <GamePage {...gamesInfo.refugeInfo} />,
+}
+
+
+
+
 function App() {
   const [currentScreen, setCurrentScreen] = useState(0);
+  const renderScreen = useCallback(() => {
+    return SCREEN_COMPONENTS[currentScreen] || <div>Home</div>;
+  }, [currentScreen]);
 
-  const root = document.getElementById("root");
-
-  function renderScreen(){
-    switch(currentScreen){
-      case 3: changeColor(); return <ProjectPage {...projectInfo.barkInfo}/>;
-      case 1: changeColor(); return <GamePage {...gamesInfo.torchlightTangoInfo} />;
-      case 2: changeColor(); return <GamePage {...gamesInfo.rootedInMathInfo} />;
-      case 0: changeColor(); return <Home />;
-      case 4: changeColor(); return <GamePage {...gamesInfo.refugeInfo} />;
-      case 5: changeColor(); return <ProjectPage {...projectInfo.mealMasterInfo}/>;
-      case 6: changeColor(); return <ProjectPage {...projectInfo.theCatchInfo} />;
-      default: return <div>Home</div>;
+  useEffect(() => {
+    const root = document.getElementById("root");
+    if (root) {
+      const color = SCREEN_COLORS[currentScreen];
+      root.style.backgroundColor = color;
     }
-  }
-
-  function changeColor(){
-    switch(currentScreen){
-      case 6: root.style.backgroundColor = `#FFD3EE`; break; //The Catch
-      case 3: root.style.backgroundColor = `#EADDCA`; break; //bark
-      case 1: root.style.backgroundColor = "#BE90D4"; break; //Torchlight tango
-      case 2: root.style.backgroundColor = "#B3F5BC"; break; //Rooted in math
-      case 0: root.style.backgroundColor = "#FFFFFF"; break; //Home
-      case 4: root.style.backgroundColor = "#FF6961"; break; //Refuge
-      case 5: root.style.backgroundColor = "#C7E9ED"; break; //Meal Master
-      default: break;
-    }
-  }
-
-
+  }, [currentScreen]);
   return (
     <div className = "mainContainer">
       <fieldset className = "boxLeft">
         <legend>Projects</legend>
-        <ul className = "projects">
-          <li className = "projectButton white"  onClick = {() =>{setCurrentScreen(0);}}>Home<span>{'>'}</span></li>
-          <li className = "projectButton pink"  onClick = {() =>{setCurrentScreen(6);}}>The Catch<span>{'>'}</span></li>
-          <li className = "projectButton brown"  onClick = {() =>{setCurrentScreen(3);}}>Bark<span>{'>'}</span></li>
-          <li className=  "projectButton red"    onClick = {() =>{setCurrentScreen(4);}}>Refuge<span>{'>'}</span></li>
-          <li className = "projectButton green"  onClick = {() =>{setCurrentScreen(2);}}>Rooted In Math<span>{'>'}</span></li>
-          <li className = "projectButton blue"   onClick = {() =>{setCurrentScreen(5);}}>Meal Master<span>{'>'}</span></li>
-          <li className = "projectButton yellow" onClick = {() =>{setCurrentScreen(1);}}>Torchlight Tango<span>{'>'}</span></li>
-
-
+        <ul className="projects">
+          {SCREEN.map((screen, index) => {
+            return (
+              <li className={`projectButton ${screen.colorName}`} onClick={()=>setCurrentScreen(index)}>{screen.screenName}<span>{">"}</span></li>
+            )
+          })}
           <li className="profile">
-            <div className="profImage"><img src={facePic} id="facePic"></img></div>
-
             <div className = "socialsArea">
-              <a href={resume} download="ferrellResume2025.pdf" target='_blank'><div className = "socialBox">Check out my resume!</div></a>
-              <a href = "https://linktr.ee/robbbieee" target='_blank'><div className = "socialBox">Socials</div></a>
+              <a className="socialBox" href={resume} download="ferrellResume2025.pdf" target='_blank'>{"> Resume <"} </a>
+              <a className="socialBox" href="https://linktr.ee/robbbieee" target='_blank'>{"> Socials <"}</a>
             </div>
 
           </li>
         </ul>
       </fieldset>
       <fieldset className = {`boxRight`}>
-        <legend>Description</legend>
+        <legend>{ SCREEN[currentScreen].screenName}</legend>
         {renderScreen()}
       </fieldset>
     </div>

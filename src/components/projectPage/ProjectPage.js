@@ -2,11 +2,11 @@ import React from "react";
 import './projectPage.css';
 
 import barkImg from "./barkLogo.png"
-import mealImg from "./mealMasterPic.PNG"
+
 import catchImg from "./catchLogo.png"
 export default function ProjectPage({features, tech, about, challenges, color, link, image, name}) {
 
-    let images = { bark: barkImg, meal: mealImg, catch: catchImg}
+    let images = { bark: barkImg, catch: catchImg}
     return (
         <>
             <div className = "projectHeader">

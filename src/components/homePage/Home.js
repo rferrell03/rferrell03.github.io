@@ -5,7 +5,7 @@ export default function Home() {
         <>
             <div className = "homePageContainer">
                 <h1>Welcome to Robert's Portfolio</h1>
-                <p>Feel free to check out my projects!</p>
+                <p>Please check out my projects!</p>
                 <div className = "aboutMe">
                     <div className="column">
                         <h2>About Me:</h2>
