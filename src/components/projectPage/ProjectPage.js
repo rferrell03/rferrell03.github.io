@@ -13,7 +13,7 @@ export default function ProjectPage({features, tech, about, challenges, color, l
                 <div className="projectContainer">
                     <img src={images[image]} className="projectImage" />
                     <div className="try">
-                        <h2><a href={link} className="projectButton" target="_blank" style={{ backgroundColor: color}}>Try it out!</a></h2>
+                        <h2><a href={link} className="projectButton" target="_blank" style={{ backgroundColor: color}}>{"> Repo <"}</a></h2>
                     </div>
                 </div>
                 <div className="projectInfo">

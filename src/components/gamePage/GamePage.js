@@ -15,7 +15,7 @@ export default function GamePage({ challenges, skills, about, gameplay, image, l
                 <div className="torchContainer">
                     <img src={images[image]} className="image" />
                     <div className="try">
-                        <h2><a href={link} className="projectButton" target="_blank" style={{ backgroundColor: color }}>Try it out!</a></h2>
+                        <h2><a href={link} className="projectButton" target="_blank" style={{ backgroundColor: color }}>{"> Play <"}</a></h2>
                     </div>
                 </div>
                 <div className="learningHeaderWrapper">
